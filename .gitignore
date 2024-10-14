@@ -1,0 +1,11 @@
+node_modules
+.env
+.deploy.env
+.DS_Store
+logs/error/*.json
+logs/error/*.error.log
+logs/info/*.json
+logs/info/*.log
+
+
+public/image
