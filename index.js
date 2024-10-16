@@ -29,7 +29,7 @@ const db = require('./models');
 
 //Server Test
 app.get('/', (req, res) => {
-    res.send(`XXX Server is Running Port ${process.env.PORT}`);
+    res.send(`AFILL Server is Running Port ${process.env.PORT}`);
 });
 
 // API Router Call
@@ -39,6 +39,6 @@ app.use('/', ApiRouter);
 // Port
 db.sequelize.sync().then(() => {
     app.listen(PORT, () => {
-        logger.info(`XXX Server Started on Port ${process.env.PORT}`);
+        logger.info(`AFILL Server Started on Port ${process.env.PORT}`);
     });
 });

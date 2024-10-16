@@ -16,7 +16,12 @@ if (config.use_env_variable) {
 	sequelize = new Sequelize(config.database, config.username, config.password, {
 		host: config.host,
 		dialect: config.dialect,
-		timezone: '+09:00',
+		timezone: "+09:00",
+		dialectOptions: {
+			charset: "utf8mb4",
+			dateStrings: true,
+			typeCast: true,
+		},
 		port: config.port,
 	});
 }

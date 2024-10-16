@@ -13,4 +13,8 @@ router.use('/jwt', jwtRouter);
 const uploadRouter = require('./Upload');
 router.use('/upload', uploadRouter);
 
+// 카드 생성 라우터
+const cardRouter = require('./Cards');
+router.use('/cards', cardRouter);
+
 module.exports = router;

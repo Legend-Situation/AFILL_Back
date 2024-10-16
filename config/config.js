@@ -9,6 +9,7 @@ module.exports = {
 		host: process.env.DB_POST,
 		port: process.env.DB_PORT,
 		dialect: 'mysql',
+		timezone: '+09:00'
 	},
 	test: {
 		username: process.env.DB_ID,
@@ -17,6 +18,7 @@ module.exports = {
 		host: process.env.DB_POST,
 		port: process.env.DB_PORT,
 		dialect: 'mysql',
+		timezone: '+09:00',
 		logging: false
 	},
 	production: {
@@ -26,6 +28,7 @@ module.exports = {
 		host: process.env.DB_POST,
 		port: process.env.DB_PORT,
 		dialect: 'mysql',
+		timezone: '+09:00',
 		logging: false
 	},
 };

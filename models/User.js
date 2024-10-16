@@ -21,14 +21,6 @@ module.exports = (sequelize, DataTypes) => {
         type: DataTypes.STRING,
         allowNull: false,
       },
-      nickname: {
-        type: DataTypes.STRING,
-        allowNull: true,
-      },
-      birthdate: {
-        type: DataTypes.STRING,
-        allowNull: true,
-      },
       refreshToken: {
         type: DataTypes.STRING,
         allowNull: true,
@@ -48,6 +40,10 @@ module.exports = (sequelize, DataTypes) => {
       collate: 'utf8_general_ci',
     }
   );
+
+  Users.associate = models => {
+    Users.hasMany(models.Card, { foreignKey: 'userId', sourceKey: 'userId' });
+  };
 
   return Users;
 };
