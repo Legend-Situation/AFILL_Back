@@ -12,6 +12,10 @@ router.use('/', KakaoRouter);
 const UpdateProfileImg = require('./UpdateProfileImg');
 router.put('/update/profileimg', validateToken, UpdateProfileImg);
 
+// 유저이름 수정 라우터
+const UpdateUserName = require('./UpdateUserName');
+router.put('/update/username', validateToken, UpdateUserName);
+
 
 
 module.exports = router;
