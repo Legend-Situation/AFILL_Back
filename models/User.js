@@ -43,6 +43,7 @@ module.exports = (sequelize, DataTypes) => {
 
   Users.associate = models => {
     Users.hasMany(models.Card, { foreignKey: 'userId', sourceKey: 'userId' });
+    Users.hasMany(models.Introduction, { foreignKey: 'userId', sourceKey: 'userId' });
   };
 
   return Users;

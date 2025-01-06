@@ -17,4 +17,8 @@ router.use('/upload', uploadRouter);
 const cardRouter = require('./Cards');
 router.use('/cards', cardRouter);
 
+// 자기소개 라우터
+const introductionRouter = require('./SelfIntroduction');
+router.use('/introduction', introductionRouter);
+
 module.exports = router;
