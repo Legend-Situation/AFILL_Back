@@ -8,7 +8,7 @@ module.exports = (sequelize, DataTypes) => {
 				autoIncrement: true,
 			},
 			cardTitle: {
-				type: DataTypes.STRING,
+				type: DataTypes.TEXT,
 				allowNull: true,
 			},
 			startDate: {
@@ -24,11 +24,11 @@ module.exports = (sequelize, DataTypes) => {
 				allowNull: true,
 			},
 			role: {
-				type: DataTypes.STRING,
+				type: DataTypes.TEXT,
 				allowNull: true,
 			},
 			impressions: {
-				type: DataTypes.STRING,
+				type: DataTypes.TEXT,
 				allowNull: true,
 			},
 			imgUrl: {
